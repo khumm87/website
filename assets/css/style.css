@@ -1,0 +1,236 @@
+body{
+  background-color: #ccc;
+  font-family: "Myriad Pro";
+}
+
+.top-nav{
+  height: 100px;
+  width: 100%;
+  background-color: #312d01;
+}
+
+.wraping{
+  background-color: #fff;
+  padding: 15px;
+}
+
+.navbar{
+  border: 0px;
+}
+.navbar-nav li{
+  background-color: #825e00;
+  border: 0px;
+}
+.navbar-nav li:hover{
+  background-color: #e4c10a;
+
+}
+.header{
+  background-color: #333;
+  width: auto;
+  height: 600px;
+}
+
+.navbar-inverse {
+    background-color: #825e00;
+    border-color: #825e00;
+    margin-bottom: 0px;
+}
+
+.navbar-inverse .navbar-nav>li>a {
+    color: #f5e8a6;
+}
+
+.navbar-inverse .navbar-nav>.active>a, .navbar-inverse .navbar-nav>.active>a:focus, .navbar-inverse .navbar-nav>.active>a:hover {
+    color: #fff;
+    background-color: #e4c10a;
+}
+
+.article{
+  margin-right: auto;
+  width: 100%;
+  padding: 5px;
+}
+
+.sidebar{
+  width: 100%;
+  height: 600px;
+}
+
+.footer{
+  background-color: #000;
+  width: 100%;
+  height: 300px;
+}
+
+.list-article{
+  padding: 9px;
+}
+
+p.short-text{
+  margin-bottom:5px;
+}
+.judul{
+
+  color:#2f2e27;
+  font-family: "Myriad Pro";
+  margin-top:0px;
+  width: auto;
+  transition: 0.5s ease-in-out;
+
+}
+
+.pagination>.active>a{
+    z-index: 2;
+    color: #fff;
+    cursor: default;
+    background-color: #825e00;
+    border-color: #825e00;
+}
+
+.pagination>li>a{
+    color: #825e00;
+}
+
+.pagination>.active>a:hover{
+    z-index: 2;
+    color: #fff;
+    cursor: default;
+    background-color: #e4c10a;
+    border-color: #e4c10a;
+}
+
+.pagination>.active>a:hover{
+    z-index: 2;
+    color: #fff;
+    cursor: default;
+    background-color: #e4c10a;
+    border-color: #e4c10a;
+}
+.judul a:hover{
+  color: #825e00;
+  width: auto;
+}
+
+hr{
+  border-color: #333;
+}
+
+.menu-footer{
+  padding-left: 40px;
+  padding-top: 30px;
+  color: white;
+}
+
+.list-menu-footer{
+  list-style-type: none;
+}
+
+.list-menu-footer li{
+  margin-left: -40px;
+}
+
+.copyright{
+  width: 100%;
+  height: 50px;
+  background-color: #2f2e27;
+}
+.copyright p{
+  padding-top: 10px;
+  text-align: center;
+  color: white;
+}
+
+@media (max-width:986px) {
+  .sidebar{
+    width: 100%;
+    height: 200px;
+  }
+}
+
+
+.btn-app {
+    border-radius: 3px;
+    position: relative;
+    padding: 15px 5px;
+    margin: 0 0 10px 10px;
+    min-width: 80px;
+    height: 60px;
+    text-align: center;
+    color: #666;
+    border: 1px solid #ddd;
+    background-color: #f4f4f4;
+    font-size: 12px;
+}
+
+
+/**corusel**/
+.carousel-fade .carousel-inner .item {
+  opacity: 0;
+  transition-property: opacity;
+}
+
+.carousel-fade .carousel-inner .active {
+  opacity: 1;
+}
+
+.carousel-fade .carousel-inner .active.left,
+.carousel-fade .carousel-inner .active.right {
+  left: 0;
+  opacity: 0;
+  z-index: 1;
+}
+
+.carousel-fade .carousel-inner .next.left,
+.carousel-fade .carousel-inner .prev.right {
+  opacity: 1;
+}
+
+.carousel-fade .carousel-control {
+  z-index: 2;
+} 
+@media all and (transform-3d), (-webkit-transform-3d) {
+    .carousel-fade .carousel-inner > .item.next,
+    .carousel-fade .carousel-inner > .item.active.right {
+      opacity: 0;
+      -webkit-transform: translate3d(0, 0, 0);
+              transform: translate3d(0, 0, 0);
+    }
+    .carousel-fade .carousel-inner > .item.prev,
+    .carousel-fade .carousel-inner > .item.active.left {
+      opacity: 0;
+      -webkit-transform: translate3d(0, 0, 0);
+              transform: translate3d(0, 0, 0);
+    }
+    .carousel-fade .carousel-inner > .item.next.left,
+    .carousel-fade .carousel-inner > .item.prev.right,
+    .carousel-fade .carousel-inner > .item.active {
+      opacity: 1;
+      -webkit-transform: translate3d(0, 0, 0);
+              transform: translate3d(0, 0, 0);
+    }
+} 
+.carousel-caption {
+    text-shadow: 0 1px 4px rgba(0,0,0,.9);
+  font-size:17px
+}
+.carousel-caption h3 {
+  font-size: 30px;
+  font-family: 'Lato', sans-serif;
+}
+
+html, body,
+    .carousel,
+    .carousel-inner,
+    .carousel-inner .item {
+      height: 100%;
+    } 
+
+
+.item:nth-child() {
+  
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  }
+
